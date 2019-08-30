@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "f85cbca6-2750-4ce4-a106-6d45f989d79f",
+		"name": "vert.x ex fkealy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8091/hello/freddie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8091/hello/freddie",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"hello",
+						"freddie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8091/hello",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\tcomment: \"it wanted a json body\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8091/hello",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
